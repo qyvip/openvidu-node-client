@@ -42,7 +42,7 @@ export class Token {
             port: this.port,
             path: this.tokenURL,
             method: 'POST',
-            rejectunauthorized: false,
+            rejectUnauthorized: false,
             headers: {
                 'Authorization': this.getBasicAuth(),
                 'Content-Type': 'application/json',

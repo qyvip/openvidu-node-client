@@ -43,7 +43,7 @@ export class Session {
             port: this.port,
             path: this.sessionIdURL,
             method: 'POST',
-            rejectunauthorized: false,
+            rejectUnauthorized: false,
             headers: {
                 'Authorization': this.getBasicAuth(),
                 'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ export class Session {
             port: this.port,
             path: this.tokenURL,
             method: 'POST',
-            rejectunauthorized: false,
+            rejectUnauthorized: false,
             headers: {
                 'Authorization': this.getBasicAuth(),
                 'Content-Type': 'application/json',
